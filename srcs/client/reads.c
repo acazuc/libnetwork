@@ -39,3 +39,13 @@ uint64_t	net_client_read_uint64(t_net_client *client)
 {
 	return (net_buffer_read_uint64(client->rbuffer));
 }
+
+float		net_client_read_float(t_net_client *client)
+{
+	return (net_buffer_read_float(client->rbuffer));
+}
+
+double		net_client_read_double(t_net_client *client)
+{
+	return (net_buffer_read_double(client->rbuffer));
+}

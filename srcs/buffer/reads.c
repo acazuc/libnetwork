@@ -63,3 +63,19 @@ uint64_t		net_buffer_read_uint64(t_net_buffer *buffer)
 	net_buffer_read(buffer, &value, sizeof(value));
 	return (value);
 }
+
+float		net_buffer_read_float(t_net_buffer *buffer)
+{
+	float	value;
+
+	net_buffer_read(buffer, &value, sizeof(value));
+	return (value);
+}
+
+double		net_buffer_read_double(t_net_buffer *buffer)
+{
+	double	value;
+
+	net_buffer_read(buffer, &value, sizeof(value));
+	return (value);
+}

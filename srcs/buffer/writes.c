@@ -39,3 +39,11 @@ void	net_buffer_write_uint64(t_net_buffer *buffer, uint64_t value)
 {
 	net_buffer_append(buffer, &value, sizeof(value));
 }
+void	net_buffer_write_float(t_net_buffer *buffer, float value)
+{
+	net_buffer_append(buffer, &value, sizeof(value));
+}
+void	net_buffer_write_double(t_net_buffer *buffer, double value)
+{
+	net_buffer_append(buffer, &value, sizeof(value));
+}

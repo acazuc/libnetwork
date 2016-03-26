@@ -39,3 +39,13 @@ void	net_client_write_uint64(t_net_client *client, uint64_t value)
 {
 	net_buffer_write_uint64(client->wbuffer, value);
 }
+
+void	net_client_write_float(t_net_client *client, float value)
+{
+	net_buffer_write_float(client->wbuffer, value);
+}
+
+void	net_client_write_double(t_net_client *client, double value)
+{
+	net_buffer_write_double(client->wbuffer, value);
+}
