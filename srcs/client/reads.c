@@ -49,3 +49,8 @@ double		net_client_read_double(t_net_client *client)
 {
 	return (net_buffer_read_double(client->rbuffer));
 }
+
+char		*net_client_read_string(t_net_client *client)
+{
+	return (net_buffer_read_string(client->rbuffer));
+}

@@ -79,3 +79,16 @@ double		net_buffer_read_double(t_net_buffer *buffer)
 	net_buffer_read(buffer, &value, sizeof(value));
 	return (value);
 }
+
+char		*net_buffer_read_string(t_net_buffer *buffer)
+{
+	char		*value;
+	uint16_t	length;
+
+	net_buffer_read(buffer, &length, sizeof(length));
+	if (!(value = malloc(sizeof(*value) * (length + 1))))
+		return (NULL);
+	net_buffer_read(buffer, &value, length);
+	value[length] = '\0';
+	return (value);
+}

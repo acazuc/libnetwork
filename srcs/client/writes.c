@@ -49,3 +49,8 @@ void	net_client_write_double(t_net_client *client, double value)
 {
 	net_buffer_write_double(client->wbuffer, value);
 }
+
+void	net_client_write_string(t_net_client *client, char *value)
+{
+	net_buffer_write_string(client->wbuffer, value);
+}
