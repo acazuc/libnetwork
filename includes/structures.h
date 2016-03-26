@@ -17,8 +17,9 @@ struct s_net_buffer
 
 struct s_net_client
 {
-	t_net_buffer		*rbuffer;
-	t_net_buffer		*wbuffer;
+	t_net_buffer	*rbuffer;
+	t_net_buffer	*wbuffer;
+	fd_set			fdst;	
 	t_sockaddr_in	sock;
 	int				fd;
 };

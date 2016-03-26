@@ -14,10 +14,18 @@ SRCS_NAME = buffer/create.c \
 			buffer/reads.c \
 			buffer/read.c \
 			buffer/clear.c \
+			buffer/send.c \
+			buffer/free.c \
 			client/create.c \
+			client/writes.c \
+			client/reads.c \
+			client/close.c \
+			client/send.c \
+			client/read.c \
 			server/create.c \
 			server/listen.c \
 			server/accept.c \
+			server/close.c \
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 

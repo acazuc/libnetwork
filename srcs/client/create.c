@@ -15,6 +15,7 @@ t_net_client	*net_client_create(void)
 	{
 		free(client->rbuffer);
 		free(client);
+		return (NULL);
 	}
 	return (client);
 }

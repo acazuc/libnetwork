@@ -3,7 +3,7 @@
 t_net_buffer	*net_buffer_create(void)
 {
 	t_net_buffer	*buffer;
-	size_t		i;
+	size_t			i;
 
 	if (!(buffer = malloc(sizeof(*buffer))))
 		return (NULL);
@@ -13,6 +13,6 @@ t_net_buffer	*net_buffer_create(void)
 		buffer->data[i] = '\0';
 		i++;
 	}
-	buffer->position = 0;
+	buffer->position = 2;
 	return (buffer);
 }

@@ -2,5 +2,5 @@
 
 void	net_buffer_clear(t_net_buffer *buffer)
 {
-	buffer->position = 0;
+	buffer->position = 2;
 }
